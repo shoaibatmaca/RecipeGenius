@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserDisplaying">
+
+    <!-- Header with user profile icon, search icon, and back button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp">
+
+        <!-- User profile icon aligned to the right end -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userPic"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/profile" />
+
+        <!-- Notification icon positioned to the left of the user profile icon -->
+        <ImageView
+            android:id="@+id/chatSearch"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_toStartOf="@id/userPic"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/search" />
+
+        <!-- Back button aligned to the left end -->
+        <ImageView
+            android:id="@+id/backtouristDashboard"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/chrn_back"
+            android:background="@drawable/back_arrow" />
+
+        <!-- Title for the chat screen -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chats"
+            android:layout_marginStart="60dp"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold"
+            android:textSize="23sp"/>
+
+    </RelativeLayout>
+
+    <!-- Initially hidden SearchView -->
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:iconifiedByDefault="false"
+        android:visibility="gone"
+        android:background="@drawable/searchview_back"
+        android:queryHint="Search users..." />
+
+    <!-- RecyclerView for displaying user list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/UserDisplayingr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="10dp"/>
+    <TextView
+        android:id="@+id/adminStatusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:text="Admin"/>
+
+</LinearLayout>

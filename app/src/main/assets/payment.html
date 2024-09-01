@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Payment Gateway</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        .container { max-width: 400px; margin: 0 auto; }
+        .button { padding: 10px 20px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        .button:disabled { background-color: #6c757d; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Dummy Payment Gateway</h1>
+    <p>Enter your payment details below:</p>
+    <form>
+        <input type="text" placeholder="Card Number" required><br><br>
+        <input type="text" placeholder="Expiry Date" required><br><br>
+        <input type="text" placeholder="CVV" required><br><br>
+        <button type="button" class="button" onclick="makePayment()">Pay Now</button>
+    </form>
+    <div id="paymentStatus"></div>
+</div>
+<script>
+    function makePayment() {
+        document.getElementById('paymentStatus').innerText = 'Payment Successful!';
+    }
+</script>
+</body>
+</html>
+

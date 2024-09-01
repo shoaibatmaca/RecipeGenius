@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".UserProfileContent.UserSettingpage">
+
+
+
+    <ImageView
+        android:id="@+id/settingchevon"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/color_chevron_left"
+         />
+
+    <!-- Settings Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"
+        android:layout_marginTop="-35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp" />
+
+    <!-- General Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GENERAL"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:padding="8dp">
+
+        <!-- Account Setting -->
+        <LinearLayout
+            android:id="@+id/account_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/users"
+                android:contentDescription="Account Icon" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Account"
+                android:textSize="18sp"
+                android:drawableEnd="@drawable/chevron_right"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="16dp" />
+        </LinearLayout>
+
+        <!-- Notifications Setting -->
+        <LinearLayout
+            android:id="@+id/notifications_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bell"
+                android:contentDescription="Notifications Icon" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notifications"
+                android:textSize="18sp"
+                android:drawableEnd="@drawable/chevron_right"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="16dp" />
+        </LinearLayout>
+
+
+        <!-- Delete Account Setting -->
+        <LinearLayout
+            android:id="@+id/delete_account_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/trsh"
+                android:contentDescription="Delete Account Icon" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deleting My Account"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="16dp" />
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logout_setting"
+            android:text="Sign Out"
+            android:layout_marginTop="20dp"/>
+
+
+        <!-- Logout Setting -->
+<!--        <LinearLayout-->
+<!--            -->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:padding="8dp"-->
+<!--            android:clickable="true"-->
+<!--            android:background="?attr/selectableItemBackground">-->
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/power"-->
+<!--                android:contentDescription="Logout Icon" />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Sign Out"-->
+<!--                android:textSize="18sp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:paddingStart="16dp" />-->
+<!--        </LinearLayout>-->
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

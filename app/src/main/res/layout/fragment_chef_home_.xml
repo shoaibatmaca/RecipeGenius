@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ChefUI.Fragments.ChefHome_Fragment">
+
+
+    <!-- Chef Name TextView -->
+    <TextView
+        android:id="@+id/chef_name_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="Hy Chef"
+        android:textColor="@color/main"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="35dp"
+        android:layout_alignParentTop="true"/>
+
+    <!-- Profile Image -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chef_profile_image"
+        android:layout_width="75dp"
+        android:layout_height="90dp"
+        android:src="@drawable/profile"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="26dp"
+        android:layout_alignTop="@id/chef_name_dashboard"
+        android:layout_alignBottom="@id/chef_name_dashboard"/>
+
+    <!-- Search EditText -->
+    <EditText
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/chef_name_dashboard"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/searchview_back"
+        android:hint="Search recipe"
+        android:drawableStart="@drawable/search"
+        android:textSize="17sp"
+        android:drawablePadding="10dp"
+        android:textColorHint="#5A5858"
+        android:paddingStart="10dp"
+        android:inputType="text"
+        android:layout_marginTop="30dp"/>
+
+    <!-- Label for Recipes section -->
+    <TextView
+        android:id="@+id/recipes_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="My Recipes"
+        android:layout_below="@id/search_view"
+        android:layout_margin="24dp"/>
+
+    <!-- RecyclerView to display recipes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recipes_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/recipes_label"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"/>
+</RelativeLayout>

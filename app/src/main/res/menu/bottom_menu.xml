@@ -1,0 +1,38 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <item
+        android:id="@+id/menu_Addrecipe"
+        android:title="Add Recipe "
+        android:icon="@drawable/menu_addrecipe"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/menu_showrecipe"
+        android:title="View All Recipe"
+        android:icon="@drawable/menu_showrecipe"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/chef_profile"
+        android:title="Profile"
+        android:icon="@drawable/chef"
+        android:orderInCategory="101"
+        app:showAsAction="always" />
+
+
+
+<!--    <item-->
+<!--        android:id="@+id/menu_item4"-->
+<!--        android:title="Item 4"-->
+<!--        android:icon="@drawable/bell"-->
+<!--        android:orderInCategory="102"-->
+<!--        app:showAsAction="always" />-->
+
+
+</menu>

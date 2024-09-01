@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reportItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/reportedUserImage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/users" />
+
+    <TextView
+        android:id="@+id/reportedUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="User Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <!-- Report Reason -->
+    <TextView
+        android:id="@+id/reportReason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reason: Inappropriate behavior"
+        android:layout_marginTop="4dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <!-- Report Timestamp -->
+    <TextView
+        android:id="@+id/reportTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reported on: 01/01/2024 12:00"
+        android:layout_marginTop="2dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <!-- Reporter User ID -->
+    <TextView
+        android:id="@+id/reporterUserId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reporter ID: user123"
+        android:layout_marginTop="2dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/btnBlockUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Block User"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnDeleteUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete User"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_red_light" />
+
+</LinearLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="16dp">-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/reportedUserImage"-->
+<!--        android:layout_width="64dp"-->
+<!--        android:layout_height="64dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:src="@drawable/users" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/reportedUserName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:text="User Name"-->
+<!--        android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnBlockUser"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Block User"-->
+<!--        android:layout_marginTop="8dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnDeleteUser"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Delete User"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:backgroundTint="@android:color/holo_red_light" />-->
+
+<!--</LinearLayout>-->

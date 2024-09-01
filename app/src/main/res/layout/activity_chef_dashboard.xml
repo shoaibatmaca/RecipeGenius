@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light"
+    tools:context=".ChefUI.ChefDashboard">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/chef_bottomBar"
+        android:layout_marginBottom="?attr/actionBarSize" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/chef_bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="30dp"
+        app:fabAlignmentMode="end"
+        app:fabCradleRoundedCornerRadius="30dp"
+        app:hideOnScroll="true"
+        android:backgroundTint="@color/purple_500"
+        app:menu="@menu/bottom_menu"
+        app:menuAlignmentMode="start"
+         />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/chef_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/plus"
+        app:layout_anchor="@id/chef_bottomBar"
+        app:maxImageSize="30dp"
+        android:background="@color/white"
+        tools:ignore="ContentDescription" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

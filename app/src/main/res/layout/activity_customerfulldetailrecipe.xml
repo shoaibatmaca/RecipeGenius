@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Customer.customerfulldetailrecipe">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <!-- Recipe Image -->
+            <ImageView
+                android:id="@+id/recipeImage"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop" />
+
+            <!-- Back button aligned to the left end -->
+            <ImageView
+                android:id="@+id/backcustomerdashboard"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/chrn_back"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/back_arrow" />
+
+
+<!--            &lt;!&ndash; Favorite Button &ndash;&gt;-->
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:id="@+id/favorite"-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:src="@drawable/bookmark"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_alignParentTop="true" />-->
+<!--            -->
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:layout_marginTop="-20dp"
+            android:background="@drawable/customer_fulldetailrecipe_background">
+
+            <!-- Recipe Name -->
+            <TextView
+                android:id="@+id/recipeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_500" />
+
+            <!-- Recipe Cuisine -->
+            <TextView
+                android:id="@+id/recipeCuisine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:textSize="17sp"
+                android:textColor="@color/secondary_dark"
+                android:layout_marginStart="10sp"
+                android:textStyle="bold" />
+
+
+
+            <!-- Ingredients Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <!-- Recipe Ingredients Label -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="3dp"
+                    android:textSize="16sp"
+                    android:textStyle="italic|bold"
+                    android:text="Ingredient:"
+                    android:textColor="@color/purple_500" />
+
+                <!-- Recipe Ingredients -->
+                <TextView
+                    android:id="@+id/recipeIngredients"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="70dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/secondary_dark" />
+            </LinearLayout>
+
+            <!-- Method Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <!-- Recipe Method Label -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp"
+                    android:padding="3dp"
+                    android:textStyle="italic|bold"
+                    android:text="Recipe Method:"
+                    android:textColor="@color/purple_500" />
+
+                <!-- Recipe Method -->
+                <TextView
+                    android:id="@+id/recipeMethod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="70dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/secondary_dark" />
+            </LinearLayout>
+
+            <!-- Description Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <!-- Recipe Description Label -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="3dp"
+                    android:textSize="16sp"
+                    android:textStyle="italic|bold"
+                    android:text="Recipe Description:"
+                    android:textColor="@color/purple_500" />
+
+                <!-- Recipe Description -->
+                <TextView
+                    android:id="@+id/recipeDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="70dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/secondary_dark" />
+
+                <!-- Email Section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/secondary_text"/>
+<!--                    &lt;!&ndash; Recipe Email Label &ndash;&gt;-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:padding="3dp"-->
+<!--                        android:textStyle="italic|bold"-->
+<!--                        android:text="For More detail contact us"-->
+<!--                        android:textColor="@color/purple_500" />-->
+
+<!--                    &lt;!&ndash; Recipe Email &ndash;&gt;-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/recipemail"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:layout_marginStart="70dp"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:textColor="@color/black" />-->
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

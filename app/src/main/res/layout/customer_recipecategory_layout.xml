@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:id="@+id/customer_recipecategory_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+        android:id="@+id/customer_recipecategory_cardview"
+        android:layout_width="75dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="40dp">
+
+        <ImageView
+            android:id="@+id/popularcategory_recipeImage"
+            android:layout_width="50dp"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="12dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/popularcategory_customer_recipecategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pasta"
+        android:layout_gravity="center"
+        android:padding="7dp"
+        android:textSize="18sp"
+        android:textStyle="italic|bold"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
+
+    </LinearLayout>

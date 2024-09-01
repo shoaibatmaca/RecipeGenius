@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppStarter.GetStarted">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/item_background"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/p1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discover Your Culinary Passion"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="24dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join us in exploring a world of recipes. Whether you're an aspiring chef or just love cooking, Recipe Genius is here to inspire your culinary journey!"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="24dp"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textColor="@color/secondary_text"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/prmo1_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/white"
+            android:text="Start Cooking"
+            android:drawableEnd="@drawable/chvrn_right"
+            android:background="@drawable/btn_background"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="-40dp"
+            android:layout_marginStart="60dp"
+            android:src="@drawable/getstartarrow"/>
+
+        <TextView
+            android:id="@+id/prmo1_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skip for now"
+            android:layout_gravity="end"
+            android:layout_marginTop="-20dp"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="14sp"
+            android:textColor="@color/secondary_text"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "392193583115",
+    "project_id": "recipegenius-9a546",
+    "storage_bucket": "recipegenius-9a546.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392193583115:android:3b65afcf3b694b714fbf0e",
+        "android_client_info": {
+          "package_name": "com.example.recipegenius"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7wKWF-9MQbBnU834tRKIMUE1Z7FP7Bg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
